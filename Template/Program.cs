@@ -14,8 +14,8 @@ namespace Template
             WebApplication app = builder.Build();
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
+            app.UseStaticFiles();
 
             app.MapControllerRoute(
                 name: "default",
